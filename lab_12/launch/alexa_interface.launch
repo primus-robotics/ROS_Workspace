@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- Launch the task action server -->
+    <node pkg="alexa_ros" type="alexa_task.py" name="alexa_task" respawn="true" output="screen"/>
+
+    <!-- Launch the remote interface node that handles remote requests -->
+    <node pkg="alexa_ros" type="alexa_ros_interface.py" name="alexa_ros_interface" respawn="true" output="screen"/>
+    
+</launch>
